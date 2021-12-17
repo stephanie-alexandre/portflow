@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+header{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+button{
+  background: transparent;
+  border:none;
+  color: white;
+  font-size: 65px;
+  width: 65px;
+  background-color: black;
+  display: none;
+}
+.box-header{
+  display: flex;
+  height: 11%;
+  align-items: center;
+}
+.box-header h3{
+  justify-content: center;
+  padding-left: 6%;
+  font-size: 165%;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  height: 10vh;
+  width: 90vw;
+  padding-left: 48%;
+}
+li{
+  display: inline;
+  font-size: 100%;
+  font-weight: 200;
+}
+li:hover,
+button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.orange{
+  background-image: url(imagens/laranja\ azul\ recorte.png) ;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  padding-left: 6vw;
+}
+.title-main{
+  display: flex;
+  align-items: center;
+  height: 548px;
+  width: 100%;
+  display: inline-block;
+  padding-top: 20%;
+}
+h1{
+  font-weight: 750;
+  font-size: 300%;
+  color:white;
+}
+.orange p{   
+  font-weight: 50;
+  font-size: 150%;
+  display: flex;
+  color: white;
+  padding-top: 2%; 
+}
+.box-img{
+  padding-top: 4.5%;
+  padding-bottom: 4.5%;
+  display: inline-block;
+  justify-content: space-around;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.box-img img{
+  width: 300px;
+  height: 300px;
+  border-radius: 2%;
+}
+footer{
+  background-color: #EEE9E9;
+  width: 100%;
+}
+.box-logo{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  width: 28%;
+  padding-left:3%;
+}
+.box-logo img{
+  width: 23px;
+  height: 23px;
+}
+.box-copyright{
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding-left: 5%;
+}
+.box-layout{
+  font-size: 75%;
+  padding-left: 2%;
+  font-weight: 250;
+}
+.topo{
+  position: fixed;
+  background-color: rgb(71, 63, 63);
+  color: darkgrey ;
+  padding: 15px 20px;
+  right: 30px;
+  bottom: 28px;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5%;
+  font-weight: bold;
+}
+
+/*Responsividade*/
+
+@media screen and (min-width: 380px){
+  footer{
+    display: flex;
+  }
+  .topo{
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {  
+  ul{
+    display: none;
+  } 
+  .orange {
+    background-position: 85%;
+    background-size: auto;
+    width: 139.8%;
+    padding-top: 85%;
+  }
+  .title-main{
+    padding-top: 40%;
+    padding-left: 8%;
+  }
+  h1{
+    font-weight: 750;
+    font-size: 370%;
+  }
+  .box-header h3{
+    text-align: center;
+    padding-left: 29%;
+    font-size: 180%;
+  }
+  .box-img{
+    padding-left: 17%;
+    padding-bottom: 15%;
+  }  
+  .box-img img{
+    padding-bottom: 6%;
+    width: 400px;
+    height: 400px;
+  }
+  button{
+    display: flex;
+  }
+  .box-logo{
+   width: 139.9%;
+   background-color: #7FDBD4;
+  }
+  .box-logo img{
+    width: 40px;
+    height: 40px;
+  }  
+  .box-copyright{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 6%;
+    padding-left: 15%;
+    background-color: white;
+  }
+  .box-layout{
+    padding:0;
+    font-size: 90%;
+    font-weight: 400;
+  }
+}
+ 
+
+
+
+
