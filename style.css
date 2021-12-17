@@ -119,14 +119,15 @@ footer{
   font-size: 75%;
   padding-left: 2%;
   font-weight: 250;
+  position: relative;
 }
 .topo{
-  position: fixed;
+  position: absolute;
   background-color: rgb(71, 63, 63);
   color: darkgrey ;
   padding: 15px 20px;
-  right: 30px;
-  bottom: 28px;
+  left: 108%;
+  top:1.5%;
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
@@ -180,8 +181,8 @@ footer{
     display: flex;
   }
   .box-logo{
-   width: 139.9%;
-   background-color: #7FDBD4;
+    width: 139.9%;
+    background-color: #7FDBD4;
   }
   .box-logo img{
     width: 40px;
